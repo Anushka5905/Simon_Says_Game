@@ -50,7 +50,7 @@ function checkAns(idx){
             setTimeout(levleup, 1000);
         }
     } else{
-        h2.innerText = `Game Over ! Your score was <b>${level}</b> <br> Press any key to start.`;
+        h2.innerHtml = `Game Over ! Your score was <b>${level}</b> <br> Press any key to start.`;
         reset();
     }
 }
@@ -76,3 +76,4 @@ function reset(){
     userSeq = [];
     level = 0;
 }
+
